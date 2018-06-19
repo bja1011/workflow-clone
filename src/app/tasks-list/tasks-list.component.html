@@ -1,0 +1,11 @@
+<ul>
+  <li *ngFor="let task of tasks">
+    <app-task
+      [onTaskDelete]="onTaskDelete"
+      [taskData]="task"
+    ></app-task>
+  </li>
+  <li>
+    <app-task></app-task>
+  </li>
+</ul>

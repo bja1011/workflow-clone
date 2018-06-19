@@ -1,0 +1,21 @@
+textarea {
+  height: 0;
+  border: none;
+  resize: none;
+  overflow: hidden;
+  display: block;
+  padding: 0;
+
+  &:focus {
+    height: auto;
+  }
+
+  &.forceShow {
+    height: auto !important;
+    padding: 2px;
+  }
+}
+
+.closed {
+  opacity: 0.3;
+}

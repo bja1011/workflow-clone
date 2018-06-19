@@ -1,0 +1,13 @@
+<div *ngIf="taskData" [class.closed]="taskData.isClosed">
+  <div>
+    <input
+      [(ngModel)]="taskData.name"
+      (keydown)="onKeyDown($event)"
+    />
+  </div>
+  <textarea
+    #descriptionElement
+    [class.forceShow]="taskData.description"
+    [(ngModel)]="taskData.description"
+  ></textarea>
+</div>
